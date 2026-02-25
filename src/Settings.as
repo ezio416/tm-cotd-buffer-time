@@ -71,7 +71,7 @@ string Setting_Font_CustomPath = "MyFont.ttf";
 
 
 [Setting category="Buffer Time Display" name="Display Font Size" min="10" max="150"]
-float Setting_BufferFontSize = 60 * Draw::GetHeight() / 1440;
+float Setting_BufferFontSize = 60 * Display::GetHeight() / 1440;
 
 [Setting category="Buffer Time Display" name="Enable Stroke"]
 bool Setting_EnableStroke = true;
@@ -118,7 +118,7 @@ vec2 S_FT_DisplayPosition = vec2(75, 25);
 KoBufferUI::FontChoice S_FT_Font = KoBufferUI::FontChoice::Oswald_Regular;
 
 [Setting category="Final Time Display" name="Font Size" min="10" max="250"]
-float S_FT_FontSize = 120 * Draw::GetHeight() / 1440;
+float S_FT_FontSize = 120 * Display::GetHeight() / 1440;
 
 [Setting category="Final Time Display" name="Enable Stroke / Shadow"]
 bool S_FT_EnableStroke = true;

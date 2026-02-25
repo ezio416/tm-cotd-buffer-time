@@ -1387,7 +1387,7 @@ namespace KoBufferUI {
     }
 
     void DrawBufferTime_Inner(const string &in toDraw, const vec4 &in bufColor, int font, bool isSecondary = false) {
-        auto screen = vec2(Draw::GetWidth(), Draw::GetHeight());
+        auto screen = Display::GetSize();
         vec2 pos = (screen * Setting_BufferDisplayPosition / vec2(100, 100));// - (size / 2);
         float fontSize = Setting_BufferFontSize;
         float sw = Setting_StrokeWidth;
@@ -1478,7 +1478,7 @@ namespace KoBufferUI {
         }
 
         nvg::Reset();
-        auto screen = vec2(Draw::GetWidth(), Draw::GetHeight());
+        auto screen = Display::GetSize();
         vec2 pos = (screen * S_FT_DisplayPosition / vec2(100, 100));
         float fontSize = S_FT_FontSize;
         float sw = S_FT_StrokeWidth;
