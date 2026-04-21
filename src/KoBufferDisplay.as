@@ -853,9 +853,9 @@ namespace KoBufferUI {
             DrawDebug_WrappedTimes("mm_targetTime", mm_targetTime);
             DrawDebug_WrappedTimes("mm_mvpTime", mm_mvpTime);
             UI::Separator();
-            UI::Text("mm_finishedTeamOrder: " + string::Join(IntsToStrs(mm_finishedTeamOrder), ", "));
-            UI::Text("mm_points: " + string::Join(IntsToStrs(mm_points), ", "));
-            UI::Text("mm_teamTotals: " + string::Join(IntsToStrs(mm_teamTotals), ", "));
+            UI::Text("mm_finishedTeamOrder: " + Text::Join(IntsToStrs(mm_finishedTeamOrder), ", "));
+            UI::Text("mm_points: " + Text::Join(IntsToStrs(mm_points), ", "));
+            UI::Text("mm_teamTotals: " + Text::Join(IntsToStrs(mm_teamTotals), ", "));
             UI::Text("mm_inflectionIx: " + mm_inflectionIx);
             // DrawDebug_WrappedTimes("priorityGhostRaw", priorityGhostRaw);
             // DrawDebug_WrappedTimes("secondaryGhostRaw", secondaryGhostRaw);
